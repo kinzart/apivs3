@@ -14,6 +14,26 @@ If you wanna try, first thing to do:
 
 
 
+create a file <strong>.env</strong> an same folder that package.json
+
+into .env:
+
+
+    DATABASE_CONNECTION_STRING = "mongodb+srv://<user>:<password>@<cruster>.upjrg.mongodb.net/<db>?retryWrites=true&w=majority"
+
+
+
+
+<h3>npm run dev</h3>
+
+
+
+
+
+
+
+
+
 <h2>UPDATE</h2>
 
 1- Lets put our UPDATE on BUSINESS RULES
@@ -89,17 +109,15 @@ In App.js:
       
       
     const cors = require('cors');
+    app.use(cors());
  
  
  
- 
-    //========== MIDDLEWARE CORS =================//
+
     app.use((req, res, next) => {
-        console.log("Middleware working...")
         res.header("Access-Control-Allow-Origin", "*"); // * any app can do req
-        res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+        res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-        app.use(cors());
         next()
     });
 
@@ -115,4 +133,3 @@ Dont forget to test on Postman, localhost:3000/name/id
 <tr>
 
 These codes are the result of a highly didactic study published by https://woliveiras.com.br
-"# apivs3" 
