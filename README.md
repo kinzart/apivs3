@@ -3,7 +3,7 @@ The end of aplication!
 
 
 to see the project online:<br>
-#http://apivs3-com-br.umbler.net/
+http://apivs3-com-br.umbler.net/
 
 
 to list (read):<br>
@@ -45,7 +45,7 @@ into .env:
       });
     };
 
-2- import function update to controller
+2- #import function update to controller
   src/controllers/name-controller.js
 
      exports.updateName = async (req, res) => {
