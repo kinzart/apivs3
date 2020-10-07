@@ -45,7 +45,7 @@ into .env:
       });
     };
 
-2- #import function update to controller
+2- import function update to controller
   src/controllers/name-controller.js
 
      exports.updateName = async (req, res) => {
